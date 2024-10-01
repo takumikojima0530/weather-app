@@ -54,13 +54,6 @@ Weather Appは、ユーザーが都市名を入力することで、その地域
 npm test
 ```
 
-## 貢献
-プロジェクトへの貢献を歓迎します。プルリクエストを送る前に、既存のイシューをチェックするか、新しいイシューを作成して変更点について議論してください。
-
-## ライセンス
-このプロジェクトは [MITライセンス](LICENSE) の下で公開されています。
-
-## 謝辞
 - 天気データの提供: [OpenWeatherMap](https://openweathermap.org/)
 - 3Dグラフィックスライブラリ: [Three.js](https://threejs.org/)
 - UIフレームワーク: [Tailwind CSS](https://tailwindcss.com/)

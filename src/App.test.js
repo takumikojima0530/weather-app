@@ -1,8 +1,17 @@
+import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+// DynamicWeatherBackground コンポーネントをモック
+jest.mock('./components/DynamicWeatherBackground', () => {
+  return function DummyDynamicWeatherBackground() {
+    return <div data-testid="mock-weather-background" />;
+  };
+});
+
+test('renders weather app', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const weatherAppElement = screen.getByText(/天気情報アプリ/i);
+  expect(weatherAppElement).toBeInTheDocument();
+  expect(screen.getByTestId('mock-weather-background')).toBeInTheDocument();
 });

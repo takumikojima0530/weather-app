@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 概要
+Weather Appは、ユーザーが都市名を入力することで、その地域の現在の天気情報を取得できるシンプルなウェブアプリケーションです。リアルタイムの天気データと美しい3D背景を組み合わせ、直感的で視覚的に魅力的なユーザーインターフェースを提供します。
 
-## Available Scripts
+## 主な機能
+- 都市名による天気情報の検索
+- 温度、湿度、風速、天気状況の表示
+- 動的な3D背景（時間経過による変化、天候に応じた視覚効果）
+- レスポンシブデザイン（デスクトップからモバイルまで対応）
 
-In the project directory, you can run:
+## 使用技術
+- React.js
+- Three.js (React Three Fiber & Drei)
+- Tailwind CSS
+- OpenWeatherMap API
 
-### `npm start`
+## セットアップ手順
+1. リポジトリをクローンします：
+   ```
+   git clone https://github.com/yourusername/weather-app.git
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. プロジェクトディレクトリに移動します：
+   ```
+   cd weather-app
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. 必要な依存関係をインストールします：
+   ```
+   npm install
+   ```
 
-### `npm test`
+4. `.env` ファイルを作成し、OpenWeatherMap APIキーを追加します：
+   ```
+   REACT_APP_OPENWEATHERMAP_API_KEY=your_api_key_here
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. アプリケーションを起動します：
+   ```
+   npm start
+   ```
 
-### `npm run build`
+6. ブラウザで `http://localhost:3000` を開いてアプリケーションにアクセスします。
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 使用方法
+1. アプリケーションのメイン画面で、検索ボックスに都市名を入力します。
+2. "天気を取得" ボタンをクリックするか、Enterキーを押します。
+3. 該当する都市の現在の天気情報が表示されます。
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## テスト
+テストを実行するには、以下のコマンドを使用します：
+```
+npm test
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 貢献
+プロジェクトへの貢献を歓迎します。プルリクエストを送る前に、既存のイシューをチェックするか、新しいイシューを作成して変更点について議論してください。
 
-### `npm run eject`
+## ライセンス
+このプロジェクトは [MITライセンス](LICENSE) の下で公開されています。
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 謝辞
+- 天気データの提供: [OpenWeatherMap](https://openweathermap.org/)
+- 3Dグラフィックスライブラリ: [Three.js](https://threejs.org/)
+- UIフレームワーク: [Tailwind CSS](https://tailwindcss.com/)
